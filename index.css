@@ -1,3 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background: red;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container {
+    width: 380px;
+    /* height: 90vw; */
+    background: #000c36;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    border: 5px solid red;
+    border-radius: 20px;
+
+}
+
+.startSec {
+    margin-top: 100px;
+    margin-bottom: 100px; 
+}
+
+img {
+    width: 20%;
+    height: 20%;
+}
+
+.title {
+    font-family: 'Carter One', sans-serif;
+    margin: 0;
+}
+
+.start-input {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.people-input,
+.time-input,
+.start-btn {
+    font-family: 'Robot Slab';
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+input::placeholder, .start-btn {
+    color: black;
+}
+
+.people-input, .time-input {
+    background: #3B4877;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+.start-btn {
+    font-family: 'Roboto Slab';
+    padding: 15px 25px;
+    background: #51E08A;
+    font-weight: 700;
+    font-size: 1.375rem;
+
+}
+
+.startSec {
+    /* display: none; */
+}
+
+
+.nextPersonSec {
+    display: none;
+}
+
+.movieSec {
+    display: none;
 }

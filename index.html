@@ -3,68 +3,71 @@
     <head>
         <link rel="stylesheet" href="index.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
         <title>PopChoice</title>
     </head>
 
     <body>
-        <header>
-            <img src="images/popcornIcon.png" alt="popcorn Icon">
-            <h1>PopChoice</h1>
-        </header>
-
-        <main>
-            <div>
-                <label>
-                    <input name="people" placeholder="How many people?" id="people">
-                </label>
-                <label>
-                    <input name="time" placeholder="How much time do you have?" id="time">
-                </label>
-                <button>Start</button>
-            </div>
-            <div>
-                <img src="images/popcornIcon.png" alt="movie">
-                <h1>1</h1>
-                <label>What's your favourite movie and why?</label>
-                <input name="why-favourite" placehoder="" id="">
-
-                <label>
-                   Are you in the mood for something new or a classic?
-                </label>
-                    <input type="radio" name="mood" value="new">New
-                <label>
-                <label>
-                    <input type="radio" name="mood" value="classic">
-                </label>
-
-                <label>What are you in the mood for?</label>
-                <select name="genre">
-                    <option value="comedy">Fun</option>
-                    <option value="action/Thriller">Serious</option>
-                    <option value="drama">Inspiring</option>
-                    <option value="horror">Scary</option>
-                </select>
-
-                <div class="input-group">
-                    <label for="film-person">
-                        Which famous film person would you love to be stranded on an island with and why?
-                    </label>
-                    
-                    <input type="text" id="film-person" name="filmPerson" placeholder="e.g., Christopher Nolan because...">
+        <div class="container">
+            <header>
+            </header>
+            
+            <main>
+                <div class="startSec">
+                    <img src="images/popcornIcon.png" alt="popcorn Icon">
+                    <h1 class="title">PopChoice</h1>
+                    <div class="start-input">
+                        <input type="number" class="people-input" name="people" placeholder="How many people?" id="people">
+                        <input type="text" name="time" class="time-input" placeholder="How much time do you have?" id="time">
+                        <button class="start-btn">Start</button>
+                    </div>
                 </div>
-                <button>Get Movie</button>
-            </div>
-            <div>
-                <h2>The Martian</h2>
-                <h2>(2015)</h2>
+                <div class="nextPersonSec">
+                    <img src="images/popcornIcon.png" alt="movie">
+                    <h1>1</h1>
+                    <label>What's your favourite movie and why?</label>
+                    <input name="why-favourite" placehoder="" id="">
 
-                <img src="images/popcornIcon.png" alt="movie">
-                <p>The inspiring story of an astronaut stranded on Mars who needs to rely on his ingenuity to come back to Earth</p>
+                    <label>
+                    Are you in the mood for something new or a classic?
+                    </label>
+                        <input type="radio" name="mood" value="new">New
+                    <label>
+                    <label>
+                        <input type="radio" name="mood" value="classic">
+                    </label>
 
-                <button>Next Movie</button>
-            </div>
-        </main>
-        
+                    <label>What are you in the mood for?</label>
+                    <select name="genre">
+                        <option value="comedy">Fun</option>
+                        <option value="action/thriller">Serious</option>
+                        <option value="drama">Inspiring</option>
+                        <option value="horror">Scary</option>
+                    </select>
+
+                    <div class="input-group">
+                        <label for="film-person">
+                            Which famous film person would you love to be stranded on an island with and why?
+                        </label>
+                        
+                        <input type="text" id="film-person" name="filmPerson" placeholder="e.g., Christopher Nolan because...">
+                    </div>
+                    <button>Get Movie</button>
+                </div>
+                <div class="movieSec">
+                    <h2>The Martian</h2>
+                    <h2>(2015)</h2>
+
+                    <img src="images/popcornIcon.png" alt="movie">
+                    <p>The inspiring story of an astronaut stranded on Mars who needs to rely on his ingenuity to come back to Earth</p>
+
+                    <button>Next Movie</button>
+                </div>
+            </main>
+        </div>
+
         <script src="index.js"></script>
     </body>
 </html>
