@@ -7,14 +7,19 @@ body {
 }
 
 .container {
-    width: 380px;
-    /* height: 90vw; */
+    width: 390px;
+    height: 675px;
+    /* min-height: 800px;
+    max-height: 100vh; */
     background: #000c36;
     color: white;
     text-align: center;
     margin: 0 auto;
     border: 5px solid red;
     border-radius: 20px;
+    box-shadow: 2px 2px 25px black;
+    /* box-shadow: 10px 5px 5px black; */
+
 
 }
 
@@ -45,8 +50,10 @@ img {
 
 .people-input,
 .time-input,
-.start-btn {
-    font-family: 'Robot Slab';
+.start-btn,
+.why-favourite-input,
+.get-movie-btn,
+.film-person-input {
     width: 80%;
     border: none;
     border-radius: 5px;
@@ -55,34 +62,95 @@ img {
     font-weight: 400;
 }
 
-input::placeholder, .start-btn {
+input::placeholder,
+.start-btn {
     color: black;
 }
 
-.people-input, .time-input {
+.people-input, 
+.time-input,
+.why-favourite-input{
     background: #3B4877;
     padding: 10px 30px;
     font-size: 18px;
+    font-family: 'Roboto Slab';
 }
 
-.start-btn {
+input, select {
+    background: #3B4877;
+    border: none;
+
+}
+
+.start-btn,
+.next-person-btn,
+.get-movie-btn {
     font-family: 'Roboto Slab';
     padding: 15px 25px;
     background: #51E08A;
     font-weight: 700;
     font-size: 1.375rem;
+}
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.nextPersonSec {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+
+}
+
+.people-number {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.nextPersonSec form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: start;
+
+}
+
+.nextPerson .why-favourite, select {
+    display: block;
+    width: 100%;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.get-movie-btn {
+    margin-top: 30px;
+}
+
+.why-favourite-input {
+    width: 100%;
+}
+.mood > label {
+    display: block;
 }
 
 .startSec {
-    /* display: none; */
+    display: none;
 }
 
-
 .nextPersonSec {
-    display: none;
+    /* display: none; */
 }
 
 .movieSec {
     display: none;
 }
+
+

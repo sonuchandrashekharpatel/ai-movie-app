@@ -26,35 +26,47 @@
                 </div>
                 <div class="nextPersonSec">
                     <img src="images/popcornIcon.png" alt="movie">
-                    <h1>1</h1>
-                    <label>What's your favourite movie and why?</label>
-                    <input name="why-favourite" placehoder="" id="">
+                    <h1 class="people-number">1</h1>
 
-                    <label>
-                    Are you in the mood for something new or a classic?
-                    </label>
-                        <input type="radio" name="mood" value="new">New
-                    <label>
-                    <label>
-                        <input type="radio" name="mood" value="classic">
-                    </label>
-
-                    <label>What are you in the mood for?</label>
-                    <select name="genre">
-                        <option value="comedy">Fun</option>
-                        <option value="action/thriller">Serious</option>
-                        <option value="drama">Inspiring</option>
-                        <option value="horror">Scary</option>
-                    </select>
-
-                    <div class="input-group">
-                        <label for="film-person">
-                            Which famous film person would you love to be stranded on an island with and why?
+                    <form>
+                        <label>What's your favourite movie and why?
+                            <input class="why-favourite-input" name="why-favourite" placehoder="The Shawshank Redemption
+                                Because it taught me to never give up hope no matter how hard life gets" id="">
                         </label>
-                        
-                        <input type="text" id="film-person" name="filmPerson" placeholder="e.g., Christopher Nolan because...">
-                    </div>
-                    <button>Get Movie</button>
+
+                        <div class="mood">
+                            <label>Are you in the mood for something new or classic?</label>
+
+                            <label>
+                                New <input type="radio" name="mood" value="new">
+                            </label>
+
+                            <label>
+                                Classic <input type="radio" name="mood" value="classic">
+                            </label>
+                        </div>
+
+
+                        <label for="genre">What are you in the mood for?
+                            <select name="genre" id="genre" class="genre">
+                                <option value="comedy">Fun</option>
+                                <option value="action/thriller">Serious</option>
+                                <option value="drama">Inspiring</option>
+                                <option value="horror">Scary</option>
+                            </select>
+                        </label>
+
+                        <div class="input-group">
+
+                            <label for="film-person">Which famous film person would you love to be stranded on an island with and why?
+                                <input class="film-person-input" type="text" id="film-person" name="filmPerson" placeholder="e.g., Christopher Nolan because...">
+                            </label>
+                            
+                        </div>
+                        <button class="get-movie-btn">Get Movie</button>
+                    </form>
+
+                    
                 </div>
                 <div class="movieSec">
                     <h2>The Martian</h2>
