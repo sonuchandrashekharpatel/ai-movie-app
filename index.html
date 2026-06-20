@@ -30,22 +30,22 @@
 
                     <form>
                         <label>What's your favourite movie and why?
-                            <input class="why-favourite-input" name="why-favourite" placehoder="The Shawshank Redemption
-                                Because it taught me to never give up hope no matter how hard life gets" id="">
+                            <textarea class="why-favourite-input" name="why-favourite" placeholder="The Shawshank Redemption Because it taught me to never give up hope no matter how hard life gets" id=""></textarea>
                         </label>
 
                         <div class="mood">
                             <label>Are you in the mood for something new or classic?</label>
 
-                            <label>
-                                New <input type="radio" name="mood" value="new">
-                            </label>
+                            <div class="mood-options">
+                                <label>
+                                    <input type="radio" name="mood" value="new">New
+                                </label>
 
-                            <label>
-                                Classic <input type="radio" name="mood" value="classic">
-                            </label>
+                                <label>
+                                   <input type="radio" name="mood" value="classic"> Classic
+                                </label>
+                            </div>
                         </div>
-
 
                         <label for="genre">What are you in the mood for?
                             <select name="genre" id="genre" class="genre">
@@ -59,7 +59,7 @@
                         <div class="input-group">
 
                             <label for="film-person">Which famous film person would you love to be stranded on an island with and why?
-                                <input class="film-person-input" type="text" id="film-person" name="filmPerson" placeholder="e.g., Christopher Nolan because...">
+                                <textarea class="film-person-input" type="text" id="film-person" name="filmPerson" placeholder="e.g., Christopher Nolan because..."></textarea>
                             </label>
                             
                         </div>

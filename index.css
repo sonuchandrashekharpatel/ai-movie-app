@@ -8,7 +8,7 @@ body {
 
 .container {
     width: 390px;
-    height: 675px;
+    /* height: 675px; */
     /* min-height: 800px;
     max-height: 100vh; */
     background: #000c36;
@@ -52,7 +52,6 @@ img {
 .time-input,
 .start-btn,
 .why-favourite-input,
-.get-movie-btn,
 .film-person-input {
     width: 80%;
     border: none;
@@ -69,7 +68,8 @@ input::placeholder,
 
 .people-input, 
 .time-input,
-.why-favourite-input{
+.why-favourite-input,
+.film-person-input {
     background: #3B4877;
     padding: 10px 30px;
     font-size: 18px;
@@ -102,7 +102,7 @@ input::-webkit-inner-spin-button {
     width: 90%;
     margin: 0 auto;
     padding-top: 20px;
-
+    padding-bottom: 40px;
 }
 
 .people-number {
@@ -134,11 +134,45 @@ label {
     margin-top: 30px;
 }
 
-.why-favourite-input {
+.why-favourite-input,
+.get-movie-btn, 
+.mood,
+.film-person-input {
     width: 100%;
 }
+
+.why-favourite-input,
+.film-person-input {
+    height: 60px;
+    text-align: left;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 300;
+    resize: none;
+}
+
+textarea::placeholder,
+.genre {
+    color: white;
+}
+
 .mood > label {
     display: block;
+}
+
+.mood-options {
+    display: flex;
+    gap: 20px;
+}
+
+.genre {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
 }
 
 .startSec {
@@ -146,11 +180,13 @@ label {
 }
 
 .nextPersonSec {
-    /* display: none; */
+    display: none;
 }
 
 .movieSec {
-    display: none;
+    /* display: none; */
 }
+
+
 
 
