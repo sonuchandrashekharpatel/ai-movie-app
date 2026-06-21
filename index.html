@@ -15,16 +15,16 @@
             </header>
             
             <main>
-                <div class="startSec">
+                <div class="startSec" id="startSec">
                     <img src="images/popcornIcon.png" alt="popcorn Icon">
                     <h1 class="title">PopChoice</h1>
                     <div class="start-input">
-                        <input type="number" class="people-input" name="people" placeholder="How many people?" id="people">
-                        <input type="text" name="time" class="time-input" placeholder="How much time do you have?" id="time">
-                        <button class="start-btn">Start</button>
+                        <input id='people-input' type="number" class="people-input" name="people" placeholder="How many people?">
+                        <input id='time-input' type="text" name="time" class="time-input" placeholder="How much time do you have?">
+                        <button class="start-btn" id="start-btn">Start</button>
                     </div>
                 </div>
-                <div class="nextPersonSec">
+                <div class="nextPersonSec hidden" id="nextPersonSec">
                     <img src="images/popcornIcon.png" alt="movie">
                     <h1 class="people-number">1</h1>
 
@@ -65,17 +65,15 @@
                         </div>
                         <button class="get-movie-btn">Get Movie</button>
                     </form>
-
-                    
                 </div>
-                <div class="movieSec">
-                    <h2>The Martian</h2>
-                    <h2>(2015)</h2>
 
-                    <img src="images/popcornIcon.png" alt="movie">
-                    <p>The inspiring story of an astronaut stranded on Mars who needs to rely on his ingenuity to come back to Earth</p>
+                <div class="movieSec hidden" id="movieSec">
+                    <h2 class="movie-title">The Martian <span class="release-year">(2015)</span></h2>
 
-                    <button>Next Movie</button>
+                    <img class="movie-poster" src="images/movie2.png" alt="movie poster">
+                    <p class="padding">The inspiring story of an astronaut stranded on Mars who needs to rely on his ingenuity to come back to Earth</p>
+
+                    <button class="next-movie-btn">Next Movie</button>
                 </div>
             </main>
         </div>
